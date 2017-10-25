@@ -2,7 +2,9 @@
 title: "R Markdown Test Drive"
 author: "Jenny"
 date: '2017-10-25'
-output: github_document
+output:
+  html_document:
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
@@ -15,11 +17,18 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
+```{r cars, error = TRUE}
 summary(cars)
 str(cars)
 names(cars)
+print(eggplant)
+ls()
+getwd()
+list.files()
 ```
+
+
+I will halt knitting right HERE `r knitr::knit_exit()`.
 
 ## Including Plots
 
