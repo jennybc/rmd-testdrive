@@ -22,6 +22,20 @@ summary(cars)
     ##  3rd Qu.:19.0   3rd Qu.: 56.00  
     ##  Max.   :25.0   Max.   :120.00
 
+``` r
+str(cars)
+```
+
+    ## 'data.frame':    50 obs. of  2 variables:
+    ##  $ speed: num  4 4 7 7 8 9 10 10 10 11 ...
+    ##  $ dist : num  2 10 4 22 16 10 18 26 34 17 ...
+
+``` r
+names(cars)
+```
+
+    ## [1] "speed" "dist"
+
 Including Plots
 ---------------
 
